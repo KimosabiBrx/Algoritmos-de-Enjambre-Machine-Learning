@@ -109,4 +109,4 @@ Todos comparten la misma estructura conceptual: **(1)** representación de la pa
 
 ## Datasets
 
-- Datos de museos y eventos sísmicos de fuentes públicas (ver carpeta del repositorio: *"Dataset Publicas usadas"*).
+- Datos de museos y eventos sísmicos de fuentes públicas.
