@@ -26,7 +26,7 @@ Cada script tiene su equivalente `.ipynb` ("Subida para abrir en Colab") para ej
 
 ## Descripción de cada ejemplo
 
-### 1️ Selección de características con ABC (Colonia Artificial de Abejas)
+### 1️. Selección de características con ABC (Colonia Artificial de Abejas)
 
 **Objetivo:** encontrar el subconjunto óptimo de columnas del dataset de museos que mejor predice si un visitante es **Nacional** o **Extranjero**, usando la menor cantidad posible de features.
 
@@ -35,7 +35,7 @@ Cada script tiene su equivalente `.ipynb` ("Subida para abrir en Colab") para ej
 - **Fases del algoritmo:** abejas empleadas → abejas observadoras (selección por ruleta según fitness) → abejas exploradoras (reinician fuentes agotadas tras `LIMIT` intentos sin mejora).
 - **Resultado:** compara el modelo con las features seleccionadas por ABC contra un baseline entrenado con todas las features.
 
-### 2️ Ajuste de hiperparámetros con PSO (Optimización por Enjambre de Partículas)
+### 2️. Ajuste de hiperparámetros con PSO (Optimización por Enjambre de Partículas)
 
 **Objetivo:** encontrar la mejor combinación de hiperparámetros de un `RandomForestClassifier` para clasificar eventos sísmicos como **VT (volcano-tectónico)** vs **OTRO**.
 
@@ -44,7 +44,7 @@ Cada script tiene su equivalente `.ipynb` ("Subida para abrir en Colab") para ej
 - **Dinámica:** actualización clásica de velocidad/posición con componente de inercia (`W`), cognitivo (`C1`) y social (`C2`).
 - **Resultado:** compara el Random Forest optimizado contra uno con hiperparámetros por defecto.
 
-### 3️ Entrenamiento de red neuronal sin backpropagation con GWO (Optimizador de Lobo Gris)
+### 3️. Entrenamiento de red neuronal sin backpropagation con GWO (Optimizador de Lobo Gris)
 
 **Objetivo:** entrenar una red neuronal (arquitectura 6 → 6 → 4 → 1) para clasificar visitantes de museos, **optimizando todos sus pesos y bias directamente con un algoritmo de enjambre**, sin usar gradientes ni retropropagación.
 
@@ -53,7 +53,7 @@ Cada script tiene su equivalente `.ipynb` ("Subida para abrir en Colab") para ej
 - **Dinámica:** se identifican los 3 mejores lobos (**alfa, beta, delta**) y el resto de la manada actualiza su posición guiándose por ellos; el coeficiente `a` decrece linealmente para pasar de exploración a explotación.
 - **Resultado:** accuracy en train y test de la red entrenada íntegramente por enjambre.
 
-### 4 Clustering no supervisado con PSO
+### 4. Clustering no supervisado con PSO
 
 **Objetivo:** agrupar eventos sísmicos del volcán Misti en `K=3` clusters según frecuencia, duración y energía, **optimizando la posición de los centroides con PSO** en lugar del algoritmo clásico de K-Means.
 
