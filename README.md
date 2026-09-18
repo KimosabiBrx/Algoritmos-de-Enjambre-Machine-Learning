@@ -1,5 +1,4 @@
 # Algoritmos-de-Enjambre-Machine-Learning
-# Algoritmos de Inteligencia de Enjambres (Swarm Intelligence)
 
 Repositorio con ejemplos prácticos de **algoritmos bio-inspirados de optimización por enjambres** aplicados a problemas reales de Machine Learning: selección de características, ajuste de hiperparámetros, entrenamiento de redes neuronales sin backpropagation y clustering no supervisado.
 
